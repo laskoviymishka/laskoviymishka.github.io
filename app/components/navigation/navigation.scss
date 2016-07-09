@@ -1,0 +1,50 @@
+.header {
+  display: block;
+  position: absolute;
+  background: white;
+  left: 25%;
+  height: 100%;
+  min-width: 50%;
+  border: 1px solid #e5e5e5;
+  overflow-y: hidden;
+  z-index: 100;
+  ul {
+    height: calc(100% - 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+  }
+  li,
+  .header__info {
+    cursor: pointer;
+    margin: 5px auto;
+    padding: 20px;
+    display: block;
+    border: 1px dotted lawngreen;
+    text-align: center;
+  }
+  li{
+    width: 200px;
+  }
+  .header__info {
+    border: none;
+  }
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.left .header {
+  left:0%;
+  transition: left 1s ease-in-out;
+}
+
+.right .header{
+  left:50%;
+  transition: left 1s ease-in-out;
+}

@@ -1,1 +1,1 @@
-"use strict";console.log("'Allo 'Allo!");
+"use strict";function componentInit(t,e){var n=document.getElementById(t+"-link");n.addEventListener("click",function(n){var o=document.getElementsByTagName("body")[0];o.className="",o.classList.add("opened"),o.classList.add(e);for(var c=document.getElementsByClassName("component"),s=0;s<c.length;s++){var a=c[s];a.classList.remove("open")}var m=document.getElementById(t);m.classList.add("open")})}componentInit("about","left"),componentInit("resume","right"),componentInit("portfolio","left"),componentInit("contact","right");

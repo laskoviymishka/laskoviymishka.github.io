@@ -1,0 +1,11 @@
+doctype html
+html.no-js
+  include ../includes/head.jade
+  body
+    | <!--[if lt IE 10]>
+    |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    | <![endif]-->
+    include ../components/navigation/navigation.jade
+    .container-fluid
+      block content
+    include ../includes/scripts.jade
